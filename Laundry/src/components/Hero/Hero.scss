@@ -1,0 +1,165 @@
+.hero {
+    background: linear-gradient(220deg, var(--bg-color1), var(--gradient-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    .container {
+        width: 100%;
+        padding: 80px 15px 20px 15px;
+        margin: 0 20px;
+
+        .hero_row {
+            margin: 30px 15px;
+
+            .item1 {
+                padding: 0 15px;
+                display: flex;
+                align-items: center;
+
+                h5 {
+                    font-family: var(--primary-font);
+                    font-weight: 500;
+                    color: var(--bg-color2);
+                    margin-bottom: 15px;
+                    text-transform: capitalize;
+                }
+
+                h3 {
+                    font-family: var(--primary-font);
+                    font-weight: 600;
+                    font-size: 60px;
+                    color: var(--text-color1);
+                    letter-spacing: 2px;
+
+                    span {
+                        color: var(--bg-color2);
+                    }
+                }
+
+                p {
+                    font-family: var(--primary-font);
+                    color: var(--para-color);
+                    font-style: italic;
+                }
+
+                .hero_buttons {
+                    display: flex;
+                    align-items: center;
+                    margin: 40px 0;
+
+                    .order_now {
+                        margin-right: 20px;
+                        border: none;
+                        background-color: var(--text-color1);
+                        outline: 2px solid var(--text-color1);
+                        padding: 10px 20px;
+                        font-family: var(--primary-font);
+                        font-weight: 500;
+                        color: var(--bg-color2);
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: var(--text-color2);
+                        }
+                    }
+
+                    .video_btn {
+                        display: flex;
+                        align-items: center;
+                        i {
+                            font-size: 30px;
+                            border: 2px dotted var(--text-color1);
+                            border-radius: 50px;
+                            padding: 8px;
+                            color: var(--text-color1);
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+
+                        }
+
+                        .video {
+                            border: none;
+                            padding: 10px 10px;
+                            font-family: var(--primary-font);
+                            font-weight: 500;
+                            color: var(--text-color1);
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .item2 {
+                .img_section {
+                    .image1 {
+                        object-fit: cover;
+                        animation: rotation 20s infinite linear;
+                    }
+                }
+            }
+        }
+    }
+
+    .shape_row {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .item1 {
+            margin: 0;
+            padding: 0;
+
+            .shape-1 {
+                height: 100px;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, 0) linear-gradient(to left top, #ffffff 50%, transparent 50%) repeat scroll 0
+                        0;
+                }
+            }
+        }
+
+        .item2 {
+            margin: 0;
+            padding: 0;
+
+            .shape-2 {
+                height: 100px;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, 0) linear-gradient(to right top, #ffffff 50%, transparent 50%) repeat scroll 0
+                        0;
+                }
+            }
+        }
+    }
+}
