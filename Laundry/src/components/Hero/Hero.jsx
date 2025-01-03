@@ -30,7 +30,7 @@ const Hero = () => {
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-12 item2">
                         <div className="img_section">
-                            <img className="image1" src="/images/Oom2.png" alt="Hero Image" />
+                            <img className="image1" src="/images/Laundry-hero-3.png" alt="Hero Image" />
                         </div>
                     </div>
                 </div>
