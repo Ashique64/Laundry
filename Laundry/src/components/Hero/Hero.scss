@@ -164,7 +164,7 @@
                     height: 100%;
                     left: 0;
                     top: 0;
-                    background: rgba(0, 0, 0, 0) linear-gradient(to left top, #ffffff 50%, transparent 50%) repeat scroll 0
+                    background: rgba(0, 0, 0, 0) linear-gradient(to left top, var(--bg-color2) 50%, transparent 50%) repeat scroll 0
                         0;
                 }
             }
@@ -187,7 +187,7 @@
                     height: 100%;
                     left: 0;
                     top: 0;
-                    background: rgba(0, 0, 0, 0) linear-gradient(to right top, #ffffff 50%, transparent 50%) repeat scroll 0
+                    background: rgba(0, 0, 0, 0) linear-gradient(to right top, var(--bg-color2) 50%, transparent 50%) repeat scroll 0
                         0;
                 }
             }
