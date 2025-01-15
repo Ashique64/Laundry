@@ -61,6 +61,14 @@ const Service = () => {
                     ))}
                 </div>
             </div>
+            <div className="row shape_row2">
+                <div className="col-6 item1">
+                    <div className="shape-1"></div>
+                </div>
+                <div className="col-6 item2">
+                    <div className="shape-2"></div>
+                </div>
+            </div>
         </div>
     );
 };

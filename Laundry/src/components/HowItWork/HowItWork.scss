@@ -1,0 +1,56 @@
+.howItWork {
+    background: var(--bg-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    .container {
+        width: 100%;
+        padding: 20px 15px 80px 15px;
+        margin: 0 20px;
+
+        .title_row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .title_col {
+                padding: 0 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h5 {
+                    font-family: var(--primary-font);
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: var(--bg-color2);
+                    margin: 15px 0;
+                    text-transform: uppercase;
+
+                    &::before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        background: var(--bg-color2);
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+
+                h3 {
+                    font-family: var(--primary-font);
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: var(--text-color1);
+                    letter-spacing: 1px;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+}
