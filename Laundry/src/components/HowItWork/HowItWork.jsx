@@ -54,6 +54,14 @@ const HowItWork = () => {
                         </div>
                     ))}
                 </div>
+
+                <div className="row button_row">
+                    <div className="col-12 button_col">
+                        <a href="">
+                            <button>schedule a pickup</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );
