@@ -1,0 +1,211 @@
+.service {
+    background: linear-gradient(220deg, var(--bg-color1), var(--gradient-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .shape_row {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .item1 {
+            margin: 0;
+            padding: 0;
+
+            .shape-1 {
+                height: 100px;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, 0) linear-gradient(to left top, transparent 50%, var(--bg-color2) 50%) repeat
+                        scroll 0 0;
+                }
+            }
+        }
+
+        .item2 {
+            margin: 0;
+            padding: 0;
+
+            .shape-2 {
+                height: 100px;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, 0) linear-gradient(to right top, transparent 50%, var(--bg-color2) 50%) repeat
+                        scroll 0 0;
+                }
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        padding: 20px 15px 80px 15px;
+        margin: 0 20px;
+
+        .title_row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .title_col {
+                padding: 0 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h5 {
+                    font-family: var(--primary-font);
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: var(--bg-color2);
+                    margin: 15px 0;
+                    text-transform: uppercase;
+
+                    &::before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        background: var(--bg-color2);
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+
+                h3 {
+                    font-family: var(--primary-font);
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: var(--text-color1);
+                    letter-spacing: 1px;
+                    margin: 15px 0;
+                }
+
+                p {
+                    font-family: var(--primary-font);
+                    color: var(--para-color);
+                    font-style: italic;
+                    width: 70%;
+                }
+            }
+        }
+
+        .items_row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .item_col {
+                padding: 20px 15px;
+                margin: 35px 0;
+                cursor: pointer;
+                overflow: hidden;
+
+                .card {
+                    width: 100%;
+                    max-height: 320px;
+                    border-radius: 100px 4px 100px 4px;
+                    box-shadow: 10px 10px 10px rgba(4, 114, 46, 0.844);
+                    background-color: var(--bg-color1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 30px 15px;
+                    overflow: hidden;
+                    transition: all 0.3s ease-in-out;
+
+                    .icon {
+                        background-color: var(--text-color1);
+                        padding: 15px;
+                        margin-bottom: 10px;
+                        border-radius: 30px 4px 30px 4px;
+                        color: var(--bg-color2);
+                        transform: rotateY(0deg);
+                        box-shadow: 6px 2px 0px rgb(0, 0, 0);
+                        transition: .5s ease-in-out;
+
+                        i {
+                            font-size: 40px;
+                        }
+                    }
+
+                    h4 {
+                        color: var(--bg-color2);
+                        font-family: var(--primary-font);
+                        font-weight: 500;
+                        font-size: 22px;
+                        overflow: hidden;
+                    }
+
+                    p {
+                        color: var(--para-color);
+                        font-size: 15px;
+                        line-height: 1.4;
+                        word-wrap: break-word;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        transform: translateY(-10px);
+                        box-shadow: 10px 10px 10px rgba(3, 115, 46, 0.581);
+                        .icon {
+                            transform: rotateY(-180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .service {
+
+        .container {
+            .title_row {
+                .title_col {
+                    padding: 0 10px;
+
+                    h5 {
+                        font-size: 14px;
+                    }
+
+                    h3 {
+                        font-size: 28px;
+                    }
+
+                    p {
+                        width: 100%;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .items_row {
+                .item_col {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
