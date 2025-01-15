@@ -110,7 +110,7 @@
                     .content {
                         margin-top: 15px;
                         overflow: hidden;
-                        height: 160px;
+                        height: 140px;
 
                         h4 {
                             font-family: var(--primary-font);
@@ -132,9 +132,9 @@
                     &:hover {
                         .icon {
                             background-color: var(--bg-color1);
-                            border: 5px dashed var(--bg-color2);
+                            border: 6px dashed var(--bg-color2);
                             color: var(--bg-color2);
-                            transform: translateY(-10px);
+                            transform: scale(0.9);
                         }
 
                         .number {
