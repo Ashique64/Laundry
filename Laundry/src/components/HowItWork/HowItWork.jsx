@@ -40,7 +40,7 @@ const HowItWork = () => {
 
                 <div className="row items_row">
                     {Items.map((item, index) => (
-                        <div className="col-xl-3 col-lg-3 col-md-6 item_col">
+                        <div key={index} className="col-xl-3 col-lg-3 col-md-6 item_col">
                             <div className="work_item">
                                 <div className="icon">
                                     <i className={item.icon}></i>
@@ -58,7 +58,7 @@ const HowItWork = () => {
                 <div className="row button_row">
                     <div className="col-12 button_col">
                         <a href="">
-                            <button>schedule a pickup</button>
+                            <button id="contact">schedule a pickup</button>
                         </a>
                     </div>
                 </div>
